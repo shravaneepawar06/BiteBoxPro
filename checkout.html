@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiteBox</title>
+    <title>Checkout</title>
     <script src="https://kit.fontawesome.com/5bb2c34d4a.js" crossorigin="anonymous"></script>
     <link rel="icon" type="images/x-icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@
         <nav>
             <img src="images/biteboxlogo.png" alt="logo" width="200px">
             <ul>
-                <li><a href="home.html" class="active" target="_blank">Home</a></li>
+                <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="bitedeals.html">Bite Deals</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
@@ -24,46 +24,99 @@
         </nav>
     </header>
     <!-- End of Header Section -->
-    <!-- start of banner -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Delicious Food Delivered Fast</h2>
-            <p>Order your favourite meals anytime, anywhere</p>
-            <button>Order Now</button>
-        </div>
-    </section>
-    <!--end of hero section-->
-    <!--start of video section-->
-    <!--left sode video-->
-    <section class="video-section">
-        <div class="video-text">
-            <h2>Our Food Story</h2>
-            <p>
-                Experience the taste of delicious meals crafted with love.From burger to pizza,we deliver happiness at
-                your doorstep.
-            </p>
-        </div>
-        <!--right side-->
-        <div class="video-box">
-            <video autoplay muted loop playinline>
-                <source src="media/foodvideo.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
-    <!--about section-->
-    <section class="about">
+    <section class="checkout-page">
 
-        <h2>Who We Are</h2>
-        <p>
-            BiteBox is a modern food delivery platform built to bring your favorite meals to your doorstep quickly and
-            effortlessly.
-            We partner with trusted local restaurants to offer a wide variety of fresh and delicious food.
-            With a user-friendly app, fast delivery, and reliable service, BiteBox makes every meal just a few taps
-            away.
-        </p>
+        <h1>Checkout</h1>
+
+        <div class="checkout-container">
+
+            <!-- Left Side -->
+
+            <div class="customer-details">
+
+                <h2>Delivery Details</h2>
+
+                <form>
+
+                    <input type="text" placeholder="Full Name" required>
+
+                    <input type="email" placeholder="Email Address" required>
+
+                    <input type="tel" placeholder="Phone Number" required>
+
+                    <textarea placeholder="Delivery Address" rows="5" required></textarea>
+
+                </form>
+
+                <h2>Payment Method</h2>
+
+                <label><input type="radio" name="payment" checked> Cash on Delivery</label>
+
+                <label><input type="radio" name="payment"> UPI</label>
+
+                <label><input type="radio" name="payment"> Credit/Debit Card</label>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-item">
+                    <span>Burger</span>
+                    <span>₹120</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Pizza</span>
+                    <span>₹180</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Cheesecake</span>
+                    <span>₹350</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-item">
+                    <span>Delivery Fee</span>
+                    <span>₹40</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>GST</span>
+                    <span>₹30</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-item total">
+
+                    <strong>Total</strong>
+
+                    <strong>₹720</strong>
+
+                </div>
+
+                <a href="orderconfirmation.html">
+
+                    <button class="place-order">
+
+                        Place Order
+
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
-    <!-- end of about section -->
-    <!-- this is footer section -->
+    <!-- This is footer section -->
     <footer>
         <div class="footer-container">
 
